@@ -57,6 +57,8 @@ var getPlatforms = function (projectName) {
     isAdded : fs.existsSync('platforms/android'),
     splashPath : 'platforms/android/app/src/main/res/',
     splash : [
+      // default
+      { name: 'drawable/screen.png',  width: 320,  height: 480  },
       // Landscape
       { name: 'drawable-land-ldpi/screen.png',  width: 320,  height: 200  },
       { name: 'drawable-land-mdpi/screen.png',  width: 480,  height: 320  },
